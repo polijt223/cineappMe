@@ -63,9 +63,10 @@
       <div class="row page-header">          
         <div class="col-lg-12">         
           <h2 class="text text-center"><span class="label label-success">EN CARTELERA</span></h2>          
-          <form class="form-inline" action="${urlRoot }buscar" method="post">
+          <form class="form-inline" action="${urlRoot }search" method="post">
             <div class="form-group">
-              <label for="fechaEstreno">Fecha: </label>             
+              <label for="fechaEstreno">Fecha: </label>    
+              <input type="hidden" name="${_csrf.parameterName}" value="${_csrf.token}"/>         
               <input type="text" class="form-control" name="fechaActualBusqueda" value="${fechaActualBusqueda}" id="fechaActualBusqueda" required="required" />
             </div>            
             <button type="submit" class="btn btn-primary">Filtrar</button>
