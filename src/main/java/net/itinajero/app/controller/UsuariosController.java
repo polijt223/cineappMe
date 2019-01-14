@@ -9,7 +9,10 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
+import net.itinajero.app.model.Perfil;
 import net.itinajero.app.model.Usuario;
+import net.itinajero.app.service.PerfilesServiceJPA;
+import net.itinajero.app.service.UsuariosServiceJPA;
 
 @Controller
 @RequestMapping("/usuarios")
@@ -17,6 +20,10 @@ public class UsuariosController {
 	
 	@Autowired
 	private BCryptPasswordEncoder encoder;
+	@Autowired
+	private UsuariosServiceJPA usuarioService;
+	@Autowired
+	private PerfilesServiceJPA perfilService;
 	
 	@GetMapping("index")
 	public String index(){
@@ -33,17 +40,24 @@ public class UsuariosController {
 		System.out.println("Usuario: "+usuario);
 		System.out.println("Role: "+perfil);
 		
+		String tempPass = usuario.getPwd();
+		String encriptado = encoder.encode(tempPass);
+		
+		usuario.setPwd(encriptado);
+		usuario.setActivo(1);
+		usuarioService.save(usuario);
+		
+		Perfil perfilTmp = new Perfil();
+		perfilTmp.setCuenta(usuario.getCuenta());
+		perfilTmp.setPerfil(perfil);
+		
+		perfilService.save(perfilTmp);
+		
+		
+		
 		return "redirect:/usuarios/index";
 	}
 	
-	@GetMapping("/demo-bcrypt")
-	public String pruebaBcrypt() {
-		
-		String password = "mari123";
-		String encriptado = encoder.encode(password);
-		System.out.println("Password encriptado: " + encriptado);
-		return "usuarios/demo";
-		
-	}
+
 }
 
