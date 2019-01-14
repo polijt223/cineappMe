@@ -89,7 +89,7 @@
 						        <h4 class="modal-title" id="myModalLabel">${banner.titulo }</h4>
 						      </div>
 						      <div class="modal-body">
-						        <img alt="${banner.titulo }" src="${urlPublic }/images/${banner.imagen }" width="865px" height="200px"> 
+						        <img alt="${banner.titulo }" src="${urlPublic }/images/${banner.imagen }" class="img-responsive img-thumbnail"/> 
 						      </div>
 						      <div class="modal-footer">
 						        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>

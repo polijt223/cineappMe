@@ -11,6 +11,11 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @RequestMapping("/admin")
 public class LoginController {
 			
+	@GetMapping(value="/index")
+	public String mostrarAcercaDe2(){
+		return "redirect:/menuBienvenido";
+	}
+	
 	@GetMapping(value = "/logout")
 	public String logout(HttpServletRequest request) {
 		SecurityContextLogoutHandler logoutHandler = new SecurityContextLogoutHandler();
