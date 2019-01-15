@@ -95,7 +95,7 @@ public class UsuariosController {
 			System.out.println("save: "+usuario);
 			
 			Perfil perfilTmp = new Perfil();
-			perfilTmp.s etCuenta(usuario.getCuenta());
+			perfilTmp.setCuenta(usuario.getCuenta());
 			perfilTmp.setPerfil(perfil);
 			perfilService.save(perfilTmp);
 			System.out.println("save: "+perfilTmp);
