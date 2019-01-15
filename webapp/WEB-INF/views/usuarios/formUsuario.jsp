@@ -48,7 +48,8 @@
 				<div class="row"> 	
 					<div class="col-sm-3">
 						<div class="form-group">
-							<label for="cuenta">Cuenta</label>             
+							<label for="cuenta">Cuenta</label>  
+							<form:hidden path="id"/>           
 							<form:input type="text" class="form-control" path="cuenta" id="cuenta" required="required"/>
 						</div>  
 					</div>

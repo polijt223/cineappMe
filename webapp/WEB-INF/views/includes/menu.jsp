@@ -41,7 +41,8 @@
             <li><a href="${urlRoot }peliculas/indexPaginate?page=0">Peliculas</a></li>   
             <li><a href="${urlRoot }noticias/indexPaginate?page=0">Noticias</a></li>  
             <li><a href="${urlRoot }horarios/index">Horarios</a></li>   
-            <li><a href="${urlRoot }banners/index">Banner</a></li>     
+            <li><a href="${urlRoot }banners/index">Banner</a></li> 
+            <li><a href="${urlRoot }usuarios/index">Usuarios</a></li>    
             <li><a href="${urlRoot }admin/logout">Salir</a></li>         
           </ul>
         </div><!--/.nav-collapse -->
