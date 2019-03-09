@@ -24,7 +24,7 @@
   <body>
 
     <!-- Fixed navbar  los dos puntos .. sirven para volver al directorio anterior -->
-    <jsp:include page="../includes/menu.jsp"></jsp:include>
+    <jsp:include page="../includesss/menu.jsp"></jsp:include>
 
     <div class="container theme-showcase" role="main">
 
@@ -66,7 +66,7 @@
       <hr class="featurette-divider">
 
       <!-- FOOTER -->
-      <jsp:include page="../includes/footer.jsp"></jsp:include>
+      <jsp:include page="../includesss/footer.jsp"></jsp:include>
 
     </div> <!-- /container -->
 

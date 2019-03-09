@@ -15,7 +15,7 @@
     
     </head>
 <body>
-    <jsp:include page="../includes/menu.jsp"></jsp:include>
+    <jsp:include page="../includesss/menu.jsp"></jsp:include>
     
     <div class="container theme-showcase" role="main">
         <div class="panel panel-danger">
@@ -29,7 +29,7 @@
                 <button class="btn btn-success" onclick="goBack()">REGRESAR</button>
             </div>
         </div>
-        <jsp:include page="../includes/footer.jsp"></jsp:include>        
+        <jsp:include page="../includesss/footer.jsp"></jsp:include>        
     </div> <!-- /container -->
     <!-- Bootstrap core JavaScript
     ================================================== -->

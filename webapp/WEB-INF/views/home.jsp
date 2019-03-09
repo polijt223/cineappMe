@@ -20,12 +20,14 @@
 
   <body>
 
-	<jsp:include page="includes/menu.jsp"></jsp:include>
+	<jsp:include page="includesss/menu.jsp"></jsp:include>
+	
 
+	
     <div class="container theme-showcase" role="main">
-
-      <!-- Carousel
-    ================================================== -->
+	
+		  <!-- Carousel
+    ================================================== --> 
       <div id="myCarousel" class="carousel slide" data-ride="carousel">
         <!-- Indicators -->
         <ol class="carousel-indicators">
@@ -58,7 +60,8 @@
           <span class="sr-only">Next</span>
         </a>
       </div><!-- /.carousel -->
-
+	
+    
 	
       <div class="row page-header">          
         <div class="col-lg-12">         
@@ -127,7 +130,7 @@
 
 
 		<!-- FOOTER -->
-      <jsp:include page="includes/footer.jsp"></jsp:include>
+      <jsp:include page="includesss/footer.jsp"></jsp:include>
 
     </div> <!-- /container -->
 

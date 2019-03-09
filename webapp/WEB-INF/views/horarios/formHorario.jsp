@@ -18,7 +18,7 @@
 
 <body>
 
-	<jsp:include page="../includes/menu.jsp" />
+	<jsp:include page="../includesss/menu.jsp" />
 
 	<div class="container theme-showcase" role="main">
 
@@ -88,7 +88,7 @@
 
 		<hr class="featurette-divider">
 
-		<jsp:include page="../includes/footer.jsp" />	
+		<jsp:include page="../includesss/footer.jsp" />	
 
 	</div>
 	<!-- /container -->

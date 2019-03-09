@@ -21,13 +21,14 @@
 
   <body>
 
-	<jsp:include page="includes/menu.jsp"></jsp:include>
+	<jsp:include page="includesss/menu.jsp"></jsp:include>
 
 
 
 		<div class="container theme-showcase" role="main">
 			<hr class="featurette-divider">
 			<img src="${urlPublic }/images/login.png" width="136" height="136" class="center">
+			
 			<form class="form-signin" action="${urlRoot }login" method="post">    
 				<c:if test="${param.error != null}">
 					<img src="${urlPublic}/images/error.png" width="48" height="48" class="center">
@@ -41,6 +42,7 @@
 				<input type="hidden" name="${_csrf.parameterName}" value="${_csrf.token}"/>
 				<button class="btn btn-lg btn-primary btn-block" type="submit">Entrar</button>
 			</form>
+			
 		</div>
 
 		

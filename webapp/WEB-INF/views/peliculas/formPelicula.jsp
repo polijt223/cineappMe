@@ -14,11 +14,10 @@
     <spring:url value="/resources" var="urlPublic"></spring:url>
     <spring:url value="/peliculas/save" var="urlForm"></spring:url>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="${urlPublic }/bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="${urlPublic }/fontawesome/all.css">
-   	<link rel="stylesheet" href="${urlPublic }/bootstrap/css/theme.css">
-   	<link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="${urlPublic }/bootstrap/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="${urlPublic }/fontawesome/all.css"/>
+   	<link rel="stylesheet" href="${urlPublic }/bootstrap/css/theme.css"/>
+   	<link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css"/>
    	
 
   </head>
@@ -26,7 +25,7 @@
   <body>
 
     <!-- Fixed navbar  los dos puntos .. sirven para volver al directorio anterior -->
-    <jsp:include page="../includes/menu.jsp"></jsp:include>
+    <jsp:include page="../includesss/menu.jsp"></jsp:include>
 
     <div class="container theme-showcase" role="main">
 
@@ -165,7 +164,7 @@
       <hr class="featurette-divider">
 
       <!-- FOOTER -->
-      <jsp:include page="../includes/footer.jsp"></jsp:include>
+      <jsp:include page="../includesss/footer.jsp"></jsp:include>
 
     </div> <!-- /container -->
 

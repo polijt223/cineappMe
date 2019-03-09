@@ -1,6 +1,5 @@
 package net.itinajero.app.controller;
 
-import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
@@ -22,6 +21,8 @@ import net.itinajero.app.service.UsuariosServiceJPA;
 @Controller
 @RequestMapping("/usuarios")
 public class UsuariosController {
+	
+	
 	
 	@Autowired
 	private BCryptPasswordEncoder encoder;
@@ -106,11 +107,14 @@ public class UsuariosController {
 			Usuario usuarioTmp = usuarioService.findById(usuario.getId());
 			usuario.setPwd(encriptado);
 			usuario.setActivo(usuarioTmp.getActivo());
+			usuarioService.save(usuario);
 			System.out.println("update: "+usuario);
+			
 			
 			Perfil perfilTmp = perfilService.findByCuenta(usuarioTmp.getCuenta());
 			perfilTmp.setCuenta(usuario.getCuenta());
 			perfilTmp.setPerfil(perfil);
+			perfilService.save(perfilTmp);
 			System.out.println("update: "+perfilTmp);
 			
 		}
